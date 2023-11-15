@@ -9,3 +9,5 @@ fernet = Fernet(key)
 decMessage = fernet.decrypt(message).decode()
 with open("random.diary", "w") as file:
     file.write(decMessage)
+with open("key.temp", "w") as file:
+    file.write(key)
