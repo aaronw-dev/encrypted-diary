@@ -1,1 +1,0 @@
-python diarydecode.py
