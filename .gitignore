@@ -1,2 +1,10 @@
-random.diary
+# Main filee in which the diary is stored
+random.diary 
+
+# A backup file in case some error occurs to corrupt the main file. 
+# This backup is also encrypted, but is not interacted with by any scripts.
+# This file is updated every time the main file is encrypted.
+backup.diary
+
+#The temporary key file that is created by diarydecode.py for ease of encryption.
 key.temp
