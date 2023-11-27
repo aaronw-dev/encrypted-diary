@@ -8,3 +8,6 @@ backup.diary
 
 #The temporary key file that is created by diarydecode.py for ease of encryption.
 key.temp
+
+#The test diary file in the "web" directory. Used for testing file read and write.
+web/test.diary
