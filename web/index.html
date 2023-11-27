@@ -10,14 +10,25 @@
 
 <body>
     <h1>Diary Tool</h1>
-    <textarea id="mainText"></textarea>
-    <h2>Encrypt</h2>
-    <div class="en crypt-container">
-        <input type="password" placeholder="Encryption Key">
-        <button>Encrypt</button>
+    <div class="download-container" id="download-container">
+        <h2>Download File</h2>
+        <!--
+        <input type="text" placeholder="File path">
+        <br>
+        <button onclick="downloadFileFromServer('test.diary')">Read file contents</button>-->
+        <input type="file" onchange="loadFile(this.files[0])">
+        <br>
     </div>
-    <div class="de crypt-container" hidden>
-        <button>Decrypt</button>
+    <textarea id="main-text" rows="30" class="main-text"></textarea>
+    <div id="encrypt-container">
+        <h2>Encrypt</h2>
+        <input type="password" placeholder="Encryption Key" id="enckey">
+        <button onclick="encryptFile()">Encrypt</button>
+    </div>
+    <div id="decrypt-container">
+        <h2>Decrypt</h2>
+        <input type="password" placeholder="Encryption Key" id="deckey">
+        <button onclick="decryptFile()">Decrypt</button>
     </div>
     <script src="./script.js"></script>
 </body>
