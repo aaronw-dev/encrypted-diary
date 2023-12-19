@@ -11,3 +11,7 @@ key.temp
 
 #The test diary file in the "web" directory. Used for testing file read and write.
 web/test.diary
+
+
+#God damnit Python, why do you always do this to me?
+__pycache__
