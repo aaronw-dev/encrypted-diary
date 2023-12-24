@@ -66,7 +66,7 @@ function refreshEncryptDecrypt() {
     encryptContainer.hidden = hasBeenDecrypted ? false : true;
     decryptContainer.hidden = hasBeenDecrypted ? true : false;
 }
-function tasta() {
+function test() {
     async function decryptMessage(key, encryptedMessage) {
         // Convert the base64-encoded key to a Uint8Array
         const keyBuffer = Uint8Array.from(atob(key), c => c.charCodeAt(0));
@@ -101,7 +101,7 @@ function tasta() {
     }
 
     // Example usage
-    const key = '6V2doDYUP5RKGHB9Ji9Km8PxTxyRGYNTGz4e8PG-DMY=';
+    const key = '';
     const encryptedMessage = mainTextArea.value;
 
     decryptMessage(key, encryptedMessage)
