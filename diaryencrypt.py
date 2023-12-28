@@ -1,5 +1,6 @@
 import os
 import base64
+from getpass import getpass
 if not os.path.exists("./random.diary"):
     print("Diary file does not exist.")
     exit()
@@ -8,8 +9,8 @@ with open("random.diary", "r") as file:
     message = file.read()
 flag = False
 while flag == False:
-    entered_pw = input("Password: ")
-    confirm_pw = input("Confirm password: ")
+    entered_pw = getpass("Password: ")
+    confirm_pw = getpass("Confirm password: ")
     if (entered_pw == confirm_pw):
         flag = True
     else:
