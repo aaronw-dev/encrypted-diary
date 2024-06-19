@@ -1,4 +1,4 @@
-# Main filee in which the diary is stored
+# Main file in which the diary is stored
 random.diary 
 
 # A backup file in case some error occurs to corrupt the main file. 
