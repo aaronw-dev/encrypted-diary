@@ -17,3 +17,6 @@ __pycache__
 
 # I would rather not publish my settings
 .vscode
+
+# I am never working on this ever again
+web
